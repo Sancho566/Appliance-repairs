@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional home appliance repair services with 15+ years experience. Certified technicians offering same-day service with 100% satisfaction guarantee. Serving residential and commercial clients.">
+    <meta name="keywords" content="appliance repair, refrigerator repair, washing machine service, oven repair, dishwasher repair, certified technicians">
+    <title>About Us | Trusted Appliance Repair Services | ApplianceRepair</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Schema markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ApplianceRepair",
+        "image": "https://yourdomain.com/images/logo.jpg",
+        "telephone": "+1-800-123-4567",
+        "email": "contact@appliancerepair.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Main St",
+            "addressLocality": "New York",
+            "addressRegion": "NY",
+            "postalCode": "10001",
+            "addressCountry": "USA"
+        },
+        "url": "https://yourdomain.com",
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 08:00-20:00"
+    }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 p-4 fixed w-full z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-white text-2xl font-bold hover:text-blue-200 transition-colors">ApplianceRepair</a>
+            <button id="menuBtn" class="md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="text-white hover:text-blue-200 transition-colors">Home</a></li>
+                <li><a href="about.html" class="text-white font-semibold hover:text-blue-200 transition-colors">About</a></li>
+                <li><a href="services.html" class="text-white hover:text-blue-200 transition-colors">Services</a></li>
+                <li><a href="contact.html" class="text-white hover:text-blue-200 transition-colors">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden absolute bg-blue-600 w-full left-0 px-4 pb-4">
+            <ul class="space-y-3">
+                <li><a href="index.html" class="block text-white hover:text-blue-200">Home</a></li>
+                <li><a href="about.html" class="block text-white font-semibold hover:text-blue-200">About</a></li>
+                <li><a href="services.html" class="block text-white hover:text-blue-200">Services</a></li>
+                <li><a href="contact.html" class="block text-white hover:text-blue-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="container mx-auto pt-24 pb-16 px-4">
+        <div class="text-center mb-16 animate-fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">About ApplianceRepair</h1>
+            <div class="h-1 w-24 bg-blue-600 mx-auto mb-8"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Our Story</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Founded in 2008, ApplianceRepair began as a small family-owned business with a single van and a commitment to excellence. What started as a local service in New York City has grown into a nationally recognized repair company serving both residential and commercial clients across 15 states.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Our founder, John Smith, a certified master technician with over 25 years of experience, established the company on three core principles: technical expertise, transparent pricing, and unparalleled customer service. Today, we maintain those values while embracing the latest technologies in appliance repair.
+                </p>
+            </div>
+
+            <div class="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="images/technician-team.jpg" alt="Our certified repair technicians" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-blue-600 opacity-20"></div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white p-6 rounded-xl shadow-md text-center hover:transform hover:scale-105 transition-all duration-300">
+                <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-tools"></i></div>
+                <h3 class="text-xl font-bold mb-3">15+ Years Experience</h3>
+                <p class="text-gray-600">Certified technicians with extensive training in all major appliance brands</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md text-center hover:transform hover:scale-105 transition-all duration-300">
+                <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-clock"></i></div>
+                <h3 class="text-xl font-bold mb-3">Same-Day Service</h3>
+                <p class="text-gray-600">Emergency repairs available 7 days a week with 2-hour response time</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md text-center hover:transform hover:scale-105 transition-all duration-300">
+                <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-shield-alt"></i></div>
+                <h3 class="text-xl font-bold mb-3">Lifetime Warranty</h3>
+                <p class="text-gray-600">All repairs come with our industry-leading lifetime parts & labor warranty</p>
+            </div>
+        </div>
+
+        <div class="bg-blue-600 text-white rounded-xl p-8 shadow-lg mb-16 animate-slide-up">
+            <h2 class="text-3xl font-bold mb-6">Why Choose Us?</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="mb-4 leading-relaxed">• Factory-trained technicians with continuous education</p>
+                    <p class="mb-4 leading-relaxed">• EPA-certified for refrigerant handling</p>
+                    <p class="mb-4 leading-relaxed">• $5 million liability insurance coverage</p>
+                </div>
+                <div>
+                    <p class="mb-4 leading-relaxed">• Transparent pricing with no hidden fees</p>
+                    <p class="mb-4 leading-relaxed">• Eco-friendly repair practices</p>
+                    <p class="mb-4 leading-relaxed">• 24/7 customer support</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Meet Our Team</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="images/technician-1.jpg" alt="Senior Technician - Mike Johnson" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mike Johnson</h3>
+                        <p class="text-blue-600 mb-2">Senior Technician</p>
+                        <p class="text-gray-600">Certified in refrigeration systems with 12 years experience</p>
+                    </div>
+                </div>
+                <!-- Add more team members similarly -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">ApplianceRepair</h4>
+                    <p class="text-gray-400">Your trusted partner in appliance repair since 2008</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">123 Repair Street</li>
+                        <li class="text-gray-400">New York, NY 10001</li>
+                        <li class="text-gray-400">(800) 123-4567</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 ApplianceRepair. All rights reserved. | <a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
