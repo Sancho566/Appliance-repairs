@@ -59,11 +59,3 @@
 
 /* Scrolling Elements */
 .animate-scroll img { flex-shrink:0; height:100px; margin-right:20px; }
-.form-container {
-    background-image: url('images\primefixlogo.png'); /* Replace with the path to your logo */
-    background-size: contain; /* Adjust to fit the logo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a white overlay for better readability */
-    backdrop-filter: blur(5px); /* Optional: Add blur effect */
-}
