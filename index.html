@@ -4,111 +4,73 @@
     <!-- SEO Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional appliance repair services - Microwave, Refrigerator, Stove, Washing Machine, and Kitchen Appliance Repairs">
-    <meta name="keywords" content="appliance repair, microwave repair, refrigerator service, stove repair, washing machine repair">
-    <title>PrimeFix Appliance Repairs - Fast & Reliable Service</title>
+    <meta name="description" content="Professional appliance repair services - Microwave, Refrigerator, Dishwasher, Dryer, Washing Machine and Kitchen Appliance Repairs. 24/7 emergency service. Free quotes & warranties!">
+    <meta name="keywords" content="appliance repair near me, microwave repair, refrigerator repair, tumble dryer repair, Dryer repair, washing machine repair, dishwasher repair, Cape Town appliance service">
+    <title>PrimeFix Appliance Repair | Microwave, Refrigerator,Dryer, Washing Machine & Dishwasher Repair Services Cape Town</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Tailwind CSS -->
+    <meta property="og:title" content="PrimeFix Appliance Repair | Microwave, Refrigerator, Dryer, Washing Machine & Dishwasher Repair Services Cape Town">
+    <meta property="og:description" content="Professional appliance repair services - Microwave, Refrigerator, Dishwasher, Dryer, Washing Machine and Kitchen Appliance Repairs. 24/7 emergency service. Free quotes & warranties!">
+    <meta property="og:image" content="https://www.primefix.co.za/images/primefixlogo.png">
+    <meta property="og:image:alt" content="PrimeFix Logo">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://www.primefix.co.za/">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://www.primefix.co.za/">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "PrimeFix Appliance Repairs",
-        "image": "",
-        "@id": "",
-        "url": "",
-        "telephone": "+1-800-123-4567",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "123 Main St",
-            "addressLocality": "New York",
-            "addressRegion": "NY",
-            "postalCode": "10001",
-            "addressCountry": "US"
-        },
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday"
-            ],
-            "opens": "08:00",
-            "closes": "20:00"
-        }
-    }
-    </script>
-    <style>
-        @keyframes fade-in-down {
-            0% {
-                opacity: 0;
-                transform: translateY(-10px);
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "PrimeFix Appliance Repairs",
+            "image": "images/primefixlogo.png",
+            "@id": "https://www.primefix.co.za/#business",
+            "url": "https://www.primefix.co.za/",
+            "telephone": "+27677805891",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Goodwood",
+                "addressRegion": "Western Cape",
+                "postalCode": "7460",
+                "addressCountry": "ZA"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -33.917197,
+                "longitude": 18.574855
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+            },
+            "areaServed": {
+                "@type": "City",
+                "name": "Cape Town",
+                "sameAs": "https://en.wikipedia.org/wiki/Cape_Town"
             }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            "serviceOfferings": [
+            "Microwave Repair",
+            "Refrigerator Repair",
+            "Dishwasher Repair",
+            "Washing Machine Repair",
+            "Dryer Repair"
+         ]
         }
-        .animate-fade-in-down {
-            animation: fade-in-down 0.3s ease-out;
-        }
-
-         /* Infinite scrolling animation */
-    @keyframes scroll {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-50%);
-        }
-    }
-
-    .animate-scroll {
-        display: flex;
-        animation: scroll 15s linear infinite;
-        width: calc(200%); /* Ensures smooth looping */
-    }
-
-    .animate-scroll img {
-        flex-shrink: 0;
-        height: 100px; /* Increase the size of the icons */
-        margin-right: 20px; /* Add spacing between icons */
-    }
-     /* Floating WhatsApp Button */
-     .fixed {
-        position: fixed;
-    }
-    .bottom-6 {
-        bottom: 1.5rem; /* Adjusts the distance from the bottom */
-    }
-    .right-6 {
-        right: 1.5rem; /* Adjusts the distance from the right */
-    }
-    .rounded-full {
-        border-radius: 9999px; /* Makes the button circular */
-    }
-    .shadow-lg {
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    @media (max-width: 768px) {
-        .fixed {
-            bottom: 1rem;
-            right: 1rem;
-        }
-        .p-4 {
-            padding: 0.75rem; /* Reduce padding for smaller screens */
-        }
-        .text-2xl {
-            font-size: 1.25rem; /* Reduce icon size */
-        }
-    }
-    </style>
+        </script>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -170,7 +132,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Microwave Repair -->
                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <img src="images\IMG-20250310-WA0015.jpg" alt="Microwave Repair Service" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <img src="images\Microwave repair.jpeg" alt="Microwave Repair Service" class="w-full h-48 object-cover mb-4 rounded-lg">
                     <h3 class="text-xl font-bold mb-2">Microwave Repair</h3>
                     <p class="text-gray-600 mb-4">Fast and reliable microwave repair services for all brands and models.</p>
                     <a href="/microwave-repair.html" class="text-blue-600 font-semibold hover:text-blue-800 flex items-center">
@@ -207,19 +169,6 @@
                     </a>
                 </div>
         
-                <!-- Oven & Stove Repair -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <img src="images\IMG-20250310-WA0014.jpg" alt="Oven Repair Service" class="w-full h-48 object-cover mb-4 rounded-lg">
-                    <h3 class="text-xl font-bold mb-2">Oven & Stove Repair</h3>
-                    <p class="text-gray-600 mb-4">Professional repair services for all types of ovens and stoves.</p>
-                    <a href="/oven-repair.html" class="text-blue-600 font-semibold hover:text-blue-800 flex items-center">
-                        Learn More
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                </div>
-        
                 <!-- Dishwasher Repair -->
                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <img src="images\IMG-20250310-WA0007.jpg" alt="Dishwasher Repair Service" class="w-full h-48 object-cover mb-4 rounded-lg">
@@ -232,19 +181,18 @@
                         </svg>
                     </a>
                 </div>
-        
-                <!-- AC Repair -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <img src="images\IMG-20250310-WA0018.jpg" alt="Air Conditioner Repair" class="w-full h-48 object-cover mb-4 rounded-lg">
-                    <h3 class="text-xl font-bold mb-2">AC Repair</h3>
-                    <p class="text-gray-600 mb-4">Complete air conditioning system maintenance and repairs.</p>
-                    <a href="/ac-repair.html" class="text-blue-600 font-semibold hover:text-blue-800 flex items-center">
-                        Learn More
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                </div>
+                <!-- Tumble Dryer Services -->
+<div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <img src="images\IMG-20250310-WA0013.jpg" alt="Tumble Dryer Repair" class="w-full h-48 object-cover mb-4 rounded-lg">
+    <h3 class="text-xl font-bold mb-2">Tumble Dryer Services</h3>
+    <p class="text-gray-600 mb-4">Comprehensive maintenance, repairs, and installation for all tumble dryer models.</p>
+    <a href="/tumble-dryer.html" class="text-blue-600 font-semibold hover:text-blue-800 flex items-center">
+        Learn More
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+    </a>
+</div>
             </div>
         </div>
     </section>
@@ -300,7 +248,7 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Warranty Protected</h3>
-                    <p class="text-gray-600">All repairs come with 1-year warranty</p>
+                    <p class="text-gray-600">All repairs come with 12-months warranty</p>
                 </div>
         
                 <!-- Feature 5 - Price Match -->
@@ -392,6 +340,16 @@
                 Have questions or want to work together? Let's connect and bring your ideas to life!
             </p>
         </div>
+
+        <div>
+            <div class="text-center mb-8">
+            <a href="https://wa.me/27677805891?text=Hi%20PrimeFix,%20I%20would%20like%20to%20book%20an%20appointment." 
+               target="_blank" 
+               class="inline-flex items-center bg-green-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-green-600 transition-all">
+                <i class="fab fa-whatsapp text-2xl mr-2"></i>
+                Book an Appointment
+            </a>
+        </div></div>
         
         <!-- Floating WhatsApp Button -->
         <a href="https://wa.me/27677805891" target="_blank" 
@@ -469,14 +427,13 @@
 
                 <div>
                     <h3 class="text-2xl font-bold mb-4">Visit Us</h3>
-                    <div class="overflow-hidden rounded-lg shadow-lg">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509379!2d144.95565131531756!3d-37.81724797975166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577fdd9d9ef4b63!2sInnovation%20City!5e0!3m2!1sen!2sus!4v1616596752841!5m2!1sen!2sus"
-                            class="w-full h-64 border-0"
-                            allowfullscreen=""
-                            loading="lazy"
-                            title="Location"
-                        ></iframe>
+                    <div class="rounded-xl overflow-hidden shadow-xl">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13202.726022400483!2d18.544906!3d-33.917456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6766b4d359a5%3A0x7b2665f946d1a5d5!2sGoodwood%2C%20Cape%20Town%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1718902929535!5m2!1sen!2sza" 
+                                class="w-full h-64 md:h-80 border-0" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                title="PrimeFix Location">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -521,10 +478,6 @@
                         <i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>
                         Refrigerator Repair
                     </a></li>
-                    <li><a href="oven-repair.html" class="text-gray-300 hover:text-blue-400 transition-colors flex items-center">
-                        <i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>
-                        Stove Repair
-                    </a></li>
                     <li><a href="washing-machine-repair.html" class="text-gray-300 hover:text-blue-400 transition-colors flex items-center">
                         <i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>
                         Washing Machine Repair
@@ -533,9 +486,9 @@
                         <i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>
                         Dishwasher Repair
                     </a></li>
-                    <li><a href="ac-repair.html" class="text-gray-300 hover:text-blue-400 transition-colors flex items-center">
+                    <li><a href="tumble-dryer.html" class="text-gray-300 hover:text-blue-400 transition-colors flex items-center">
                         <i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>
-                        AC Repair
+                        Tumble-dryer Repair
                     </a></li>
                 </ul>
             </div>
@@ -597,17 +550,8 @@
         </div>
     </div>
 </footer>
-    <!-- Mobile Menu (hidden by default) -->
-    <script>
-        function toggleMobileMenu() {
-    const menu = document.getElementById('mobile-menu');
-    if (menu) {
-        menu.classList.toggle('hidden');
-        menu.classList.toggle('animate-fade-in-down');
-    } else {
-        console.error('Mobile menu element not found');
-    }
-}
-    </script>
+    
+    <script src="index.js"></script>
+    
 </body>
 </html>

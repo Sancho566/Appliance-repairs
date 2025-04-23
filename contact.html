@@ -4,45 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact PrimeFix - Appliance Repair Services</title>
-    
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        #mobile-menu {
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
-          /* Floating WhatsApp Button */
-     .fixed {
-        position: fixed;
-    }
-    .bottom-6 {
-        bottom: 1.5rem; /* Adjusts the distance from the bottom */
-    }
-    .right-6 {
-        right: 1.5rem; /* Adjusts the distance from the right */
-    }
-    .rounded-full {
-        border-radius: 9999px; /* Makes the button circular */
-    }
-    .shadow-lg {
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    @media (max-width: 768px) {
-        .fixed {
-            bottom: 1rem;
-            right: 1rem;
-        }
-        .p-4 {
-            padding: 0.75rem; /* Reduce padding for smaller screens */
-        }
-        .text-2xl {
-            font-size: 1.25rem; /* Reduce icon size */
-        }
-    }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -96,6 +60,16 @@
                     Have questions or need immediate assistance? Our team is ready to help 24/7!
                 </p>
             </div>
+
+            <div>
+                <div class="text-center mb-8">
+                <a href="https://wa.me/27677805891?text=Hi%20PrimeFix,%20I%20would%20like%20to%20book%20an%20appointment." 
+                   target="_blank" 
+                   class="inline-flex items-center bg-green-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-green-600 transition-all">
+                    <i class="fab fa-whatsapp text-2xl mr-2"></i>
+                    Book an Appointment
+                </a>
+            </div></div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- Contact Form -->
@@ -155,7 +129,7 @@
                                 </div>
                                 <div>
                                     <p class="font-medium text-blue-100">Operating Hours</p>
-                                    <p class="text-blue-200">24/7 Emergency Service<br>Mon-Sun: 8AM - 6PM</p>
+                                    <p class="text-blue-200">24/7 Emergency Service<br>Mon-Sun</p>
                                 </div>
                             </li>
                         </ul>
@@ -163,7 +137,7 @@
 
                     <!-- Map -->
                     <div class="rounded-xl overflow-hidden shadow-xl">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0412604574447!2d28.035515315028736!3d-26.195522983441227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b6e36a7a5%3A0x564d5d7375198f8b!2sSandton%20City!5e0!3m2!1sen!2sza!4v1689087062505!5m2!1sen!2sza" 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13202.726022400483!2d18.544906!3d-33.917456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6766b4d359a5%3A0x7b2665f946d1a5d5!2sGoodwood%2C%20Cape%20Town%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1718902929535!5m2!1sen!2sza" 
                                 class="w-full h-64 md:h-80 border-0" 
                                 allowfullscreen="" 
                                 loading="lazy" 
@@ -212,10 +186,6 @@
                             <i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>
                             Refrigerator Repair
                         </a></li>
-                        <li><a href="oven-repair.html" class="text-gray-300 hover:text-blue-400 transition-colors flex items-center">
-                            <i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>
-                            Stove Repair
-                        </a></li>
                         <li><a href="washing-machine-repair.html" class="text-gray-300 hover:text-blue-400 transition-colors flex items-center">
                             <i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>
                             Washing Machine Repair
@@ -224,9 +194,9 @@
                             <i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>
                             Dishwasher Repair
                         </a></li>
-                        <li><a href="ac-repair.html" class="text-gray-300 hover:text-blue-400 transition-colors flex items-center">
+                        <li><a href="tumble-dryer.html" class="text-gray-300 hover:text-blue-400 transition-colors flex items-center">
                             <i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>
-                            AC Repair
+                            Tumble-dryer Repair
                         </a></li>
                     </ul>
                 </div>
@@ -288,31 +258,7 @@
             </div>
         </div>
     </footer>
-      
 
-    <!-- Mobile Menu Script -->
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
-    
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const menu = document.getElementById('mobile-menu');
-            const button = document.querySelector('[onclick="toggleMobileMenu()"]');
-            
-            if (!menu.contains(event.target) && !button.contains(event.target) && !menu.classList.contains('hidden')) {
-                menu.classList.add('hidden');
-            }
-        });
-    
-        // Close menu after clicking a link
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('mobile-menu').classList.add('hidden');
-            });
-        });
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
