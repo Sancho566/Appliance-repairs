@@ -44,6 +44,7 @@
     <link rel="canonical" href="https://www.primefix.co.za/" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -199,14 +200,32 @@
         <p class="text-xl mb-8">
           24/7 Emergency Service | Certified Technicians | 6-months Warranty
         </p>
-        <a
-          href="/contact.html"
-          class="bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600"
-        >
-          Schedule Now
-        </a>
+        <div class="flex flex-col items-center gap-y-4">
+          <!-- WhatsApp Button with Icon -->
+          <a
+            href="https://wa.me/27677805891"
+            class="bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-colors inline-flex items-center gap-x-2"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-whatsapp text-xl"></i>
+            Book an Appointment via WhatsApp
+          </a>
+          
+          <!-- Phone Call Link with Phone Icon -->
+          <a
+            href="tel:+1234567890"
+            class="bg-white text-blue-800 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors inline-flex items-center gap-x-2"
+          >
+            <i class="fas fa-phone-alt"></i>
+            Or call us at +27 67 780 5891
+          </a>
+        </div>
       </div>
     </header>
+    
+    <!-- Add this in your HTML head to load Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Services Grid -->
     <section class="container mx-auto py-16 px-4">
