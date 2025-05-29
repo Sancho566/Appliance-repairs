@@ -191,38 +191,44 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="bg-blue-800 text-white py-20">
-      <div class="container mx-auto text-center px-4">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">
-          Expert Appliance Repair Services
-        </h1>
-        <p class="text-xl mb-8">
-          24/7 Emergency Service | Certified Technicians | 6-months Warranty
-        </p>
-        <div class="flex flex-col items-center gap-y-4">
-          <!-- WhatsApp Button with Icon -->
-          <a
-            href="https://wa.me/27677805891"
-            class="bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-colors inline-flex items-center gap-x-2"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="fab fa-whatsapp text-xl"></i>
-            Book an Appointment via WhatsApp
-          </a>
-          
-          <!-- Phone Call Link with Phone Icon -->
-          <a
-            href="tel:+1234567890"
-            class="bg-white text-blue-800 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors inline-flex items-center gap-x-2"
-          >
-            <i class="fas fa-phone-alt"></i>
-            Or call us at +27 67 780 5891
-          </a>
-        </div>
-      </div>
-    </header>
+   
+   <!-- Hero Section -->
+<header class="relative h-screen flex items-center justify-center text-white">
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-50" style="background-image: url('/images/IMG-20250310-WA0006.jpg');"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+      Expert Appliance Repair Services
+    </h1>
+    <p class="text-xl mb-8">
+      24/7 Emergency Service | Certified Technicians | 6-months Warranty
+    </p>
+    <div class="flex flex-col items-center gap-y-4">
+      <!-- WhatsApp Button -->
+      <a
+        href="https://wa.me/27677805891"
+        class="bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-colors inline-flex items-center gap-x-2"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fab fa-whatsapp text-xl"></i>
+        Book an Appointment via WhatsApp
+      </a>
+
+      <!-- Phone Call Button -->
+      <a
+        href="tel:+27677805891"
+        class="bg-white text-blue-800 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors inline-flex items-center gap-x-2"
+      >
+        <i class="fas fa-phone-alt"></i>
+        Or call us at +27 67 780 5891
+      </a>
+    </div>
+  </div>
+</header>
+
     
     <!-- Add this in your HTML head to load Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
