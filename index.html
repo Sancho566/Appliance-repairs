@@ -53,7 +53,7 @@
         "image": "images/primefixlogo.png",
         "@id": "https://www.primefix.co.za/#business",
         "url": "https://www.primefix.co.za/",
-        "telephone": "+276770074565",
+        "telephone": "+27670074565",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Goodwood",
@@ -191,24 +191,23 @@
       </div>
     </nav>
 
-   
-   <!-- Hero Section -->
+   <!-- Header Section -->
 <header class="relative h-screen flex items-center justify-center text-white">
-  <!-- Background Image -->
-  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-50" style="background-image: url('/images/IMG-20250310-WA0006.jpg');"></div>
+  <div
+    class="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-50"
+    style="background-image: url('/images/IMG-20250310-WA0006.jpg');"
+  ></div>
 
-  <!-- Content -->
   <div class="relative z-10 text-center px-4">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+    <h1 class="text-5xl md:text-5xl font-bold mb-4">
       Expert Appliance Repair Services
     </h1>
     <p class="text-xl mb-8">
       24/7 Emergency Service | Certified Technicians | 6-months Warranty
     </p>
     <div class="flex flex-col items-center gap-y-4">
-      <!-- WhatsApp Button -->
       <a
-        href="https://wa.me/276770074565"
+        href="https://wa.me/+27670074565"
         class="bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-colors inline-flex items-center gap-x-2"
         target="_blank"
         rel="noopener"
@@ -217,19 +216,232 @@
         Book an Appointment via WhatsApp
       </a>
 
-      <!-- Phone Call Button -->
       <a
-        href="tel:+27677805891"
+        href="tel:+27670074565"
         class="bg-white text-blue-800 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors inline-flex items-center gap-x-2"
       >
         <i class="fas fa-phone-alt"></i>
-        Or call us at +27 6770 074 565
+        Or call us at +27 670 074 565
       </a>
     </div>
   </div>
 </header>
 
-    
+<!-- Contact / Quotation Form Section -->
+<section id="quotation" class="py-16 bg-gray-100">
+  <div class="max-w-5xl mx-auto px-6">
+    <!-- Contact Form Section -->
+    <div class="bg-white rounded-b-xl shadow-lg p-6">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">
+        REQUEST A QUOTATION
+      </h2>
+
+      <form id="quotationForm" class="space-y-6" action="quotation.php" method="POST">
+        <!-- Name and Email Row -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1"
+              >Name *</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1"
+              >Email *</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label for="phone" class="block text-sm font-medium text-gray-700 mb-1"
+            >Phone Number</label
+          >
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <!-- Location / Area / Suburb -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <label for="location" class="block text-sm font-medium text-gray-700 mb-1"
+              >Location *</label
+            >
+            <input
+              type="text"
+              id="location"
+              name="location"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label for="area" class="block text-sm font-medium text-gray-700 mb-1"
+              >Area</label
+            >
+            <input
+              type="text"
+              id="area"
+              name="area"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label for="suburb" class="block text-sm font-medium text-gray-700 mb-1"
+              >Suburb</label
+            >
+            <input
+              type="text"
+              id="suburb"
+              name="suburb"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+        </div>
+
+        <!-- Appliance / Brand -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="applianceType"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Type of Appliance *</label
+            >
+            <select
+              id="applianceType"
+              name="applianceType"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="" disabled selected>Please Select</option>
+              <option>Refrigerator</option>
+              <option>Freezer</option>
+              <option>Oven</option>
+              <option>Electric/Gas Stove</option>
+              <option>Dishwasher</option>
+              <option>Washing Machine</option>
+              <option>Microwave</option>
+              <option>Dryer</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="brand" class="block text-sm font-medium text-gray-700 mb-1"
+              >Select your brand *</label
+            >
+            <select
+              id="brand"
+              name="brand"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="" disabled selected>Please Select</option>
+              <option>Samsung</option>
+              <option>LG</option>
+              <option>Whirlpool</option>
+              <option>Bosch</option>
+              <option>Miele</option>
+              <option>Electrolux</option>
+              <option>Hisense</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700 mb-1"
+            >Message *</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Please describe the issue with your appliance..."
+          ></textarea>
+        </div>
+
+        <!-- Referral -->
+        <div>
+          <label for="referral" class="block text-sm font-medium text-gray-700 mb-1"
+            >How did you hear about us? *</label
+          >
+          <select
+            id="referral"
+            name="referral"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option value="" disabled selected>Please Select</option>
+            <option>Google</option>
+            <option>Facebook</option>
+            <option>Instagram</option>
+            <option>Friend/Referral</option>
+            <option>Flyer/Advertisement</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <!-- Terms -->
+        <div class="flex items-start">
+          <input
+            id="terms"
+            name="terms"
+            type="checkbox"
+            required
+            class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+          />
+          <label for="terms" class="ml-2 text-sm text-gray-700"
+            >I agree to the
+            <a href="#" class="text-blue-600 hover:underline">Terms & Conditions</a>
+            *</label
+          >
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <button
+            type="submit"
+            class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-md transition duration-300 flex items-center justify-center"
+          >
+            <i class="fas fa-paper-plane mr-2"></i> Request Quotation
+          </button>
+        </div>
+      </form>
+
+      <!-- Success Message -->
+      <div
+        id="successMessage"
+        class="hidden mt-6 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded"
+      >
+        <strong class="font-bold">Success!</strong>
+        <span class="block sm:inline">
+          Your quotation request has been submitted. We'll contact you within 24 hours.
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- Add this in your HTML head to load Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -801,135 +1013,16 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section
-      id="contact"
-      class="bg-gradient-to-r from-blue-800 to-purple-800 text-white py-20"
-    >
-      <div class="container mx-auto px-4 md:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-extrabold mb-4">Get in Touch</h2>
-          <p class="text-gray-200 text-lg">
-            Have questions or want to work together? Let's connect and bring
-            your ideas to life!
-          </p>
-        </div>
-
-        <div>
-          <div class="text-center mb-8">
-            <a
-              href="https://wa.me/276770074565?text=Hi%20PrimeFix,%20I%20would%20like%20to%20book%20an%20appointment."
-              target="_blank"
-              class="inline-flex items-center bg-green-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-green-600 transition-all"
-            >
-              <i class="fab fa-whatsapp text-2xl mr-2"></i>
-              Book an Appointment
-            </a>
-          </div>
-        </div>
-
         <!-- WhatsApp Button -->
         <a
-          href="https://wa.me/276770074565"
+          href="https://wa.me/27670074565"
           target="_blank"
           class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all"
           aria-label="Chat with us on WhatsApp"
         >
           <i class="fab fa-whatsapp text-2xl"></i>
         </a>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <!-- Contact Form -->
-          <div class="bg-white text-gray-800 rounded-lg shadow-lg p-8">
-            <h3 class="text-2xl font-bold mb-6 text-center text-blue-800">
-              Send Us a Message
-            </h3>
-            <form action="#" method="POST" class="space-y-6">
-              <div>
-                <label for="name" class="block text-sm font-semibold"
-                  >Your Name</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your name"
-                  class="w-full border border-gray-300 rounded-lg px-4 py-3 mt-2 focus:ring focus:ring-blue-400 focus:outline-none"
-                  required
-                />
-              </div>
-              <div>
-                <label for="email" class="block text-sm font-semibold"
-                  >Your Email</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  class="w-full border border-gray-300 rounded-lg px-4 py-3 mt-2 focus:ring focus:ring-blue-400 focus:outline-none"
-                  required
-                />
-              </div>
-              <div>
-                <label for="message" class="block text-sm font-semibold"
-                  >Your Message</label
-                >
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder="Enter your message"
-                  class="w-full border border-gray-300 rounded-lg px-4 py-3 mt-2 focus:ring focus:ring-blue-400 focus:outline-none"
-                  required
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 rounded-lg shadow-lg hover:opacity-90 transition"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-
-          <!-- Contact Info and Map -->
-          <div class="space-y-8">
-            <div>
-              <h3 class="text-2xl font-bold mb-4">Contact Information</h3>
-              <p class="text-gray-200">
-                Feel free to reach out to us via email or phone. You can also
-                visit our office at the address below.
-              </p>
-              <ul class="mt-6 space-y-4">
-                <li class="flex items-center space-x-3">
-                  <i class="fas fa-envelope text-blue-400 text-lg"></i>
-                  <span class="text-gray-200">primefix.co.za</span>
-                </li>
-                <li class="flex items-center space-x-3">
-                  <i class="fas fa-phone-alt text-blue-400 text-lg"></i>
-                  <span class="text-gray-200">+27 6770 074 565</span>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 class="text-2xl font-bold mb-4">Visit Us</h3>
-              <div class="rounded-xl overflow-hidden shadow-xl">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13202.726022400483!2d18.544906!3d-33.917456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6766b4d359a5%3A0x7b2665f946d1a5d5!2sGoodwood%2C%20Cape%20Town%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1718902929535!5m2!1sen!2sza"
-                  class="w-full h-64 md:h-80 border-0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  title="PrimeFix Location"
-                >
-                </iframe>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
 
     <footer
       class="bg-gradient-to-b from-gray-900 to-gray-800 text-white pt-16 pb-8"
@@ -1064,10 +1157,10 @@
                 <div>
                   <p class="font-medium">Emergency Line</p>
                   <a
-                    href="tel:+276770074565"
+                    href="tel:+27670074565"
                     class="hover:text-blue-400 transition-colors"
                   >
-                    +27 67 700 74565
+                    +27 67 007 4565
                   </a>
                 </div>
               </li>
@@ -1092,42 +1185,12 @@
               </li>
             </ul>
           </div>
-
-          <!-- Newsletter -->
-          <div>
-            <h4 class="text-xl font-bold mb-6 border-l-4 border-blue-400 pl-3">
-              Stay Updated
-            </h4>
-            <p class="text-gray-300 mb-4">
-              Subscribe for maintenance tips and special offers:
-            </p>
-            <form class="flex gap-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="flex-1 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-800"
-              />
-              <button
-                type="submit"
-                class="bg-blue-400 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition-colors"
-              >
-                <i class="fas fa-paper-plane"></i>
-              </button>
-            </form>
-          </div>
         </div>
 
         <!-- Copyright -->
         <div class="border-t border-gray-700 pt-8 text-center">
           <p class="text-gray-400 text-sm">
             © 2025 PrimeFix. All rights reserved.
-            <a href="#" class="hover:text-blue-400 transition-colors"
-              >Privacy Policy</a
-            >
-            |
-            <a href="#" class="hover:text-blue-400 transition-colors"
-              >Terms of Service</a
-            >
           </p>
         </div>
       </div>
