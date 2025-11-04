@@ -102,38 +102,35 @@
 
   <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-blue-900 text-white shadow-lg">
+    <nav class="bg-blue-400 text-white shadow-lg">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center h-16">
           <!-- Logo -->
-          <a
-            href="/"
-            class="text-2xl font-bold tracking-tight hover:text-blue-200 transition-colors"
-          >
-            PrimeFix
-          </a>
+          <a href="index.html" class="text-2xl font-bold">
+          <span class="text-blue-900">Prime</span>Fix
+        </a>
 
           <!-- Desktop Navigation -->
           <div class="hidden md:flex space-x-8 items-center">
             <a
-              href="/"
-              class="hbg-blue-800 text-blue-100 px-3 py-2 rounded-md font-medium transition-colors"
+              href="index.html"
+              class=" text-white px-3 py-2 rounded-md font-medium transition-colors"
               >Home</a
             >
             <a
               href="/about.html"
-              class="bg-blue-800 text-blue-100 px-3 py-2 rounded-md font-medium transition-colors"
+              class=" text-white px-3 py-2 s font-medium transition-colors"
               aria-current="page"
               >About</a
             >
             <a
               href="/services.html"
-              class="bg-blue-800 text-blue-100 px-3 py-2 rounded-md font-medium transition-colors"
+              class=" text-white px-3 py-2  font-medium transition-colors"
               >Services</a
             >
             <a
               href="/contact.html"
-              class="bg-blue-800 text-blue-100 px-3 py-2 rounded-md font-medium transition-colors"
+              class=" text-white px-3 py-2  font-medium transition-colors"
               >Contact</a
             >
           </div>
@@ -169,22 +166,22 @@
         <div class="px-2 pt-2 pb-3 space-y-1">
           <a
             href="/"
-            class="hover:bg-blue-700 text-white block px-3 py-2 rounded-md"
+            class="hover:bg-blue-400 text-white block px-3 py-2 rounded-md"
             >Home</a
           >
           <a
             href="/about.html"
-            class="hover:bg-blue-700 text-white block px-3 py-2 rounded-md"
+            class="hover:bg-blue-400 text-white block px-3 py-2 rounded-md"
             >About</a
           >
           <a
             href="/services.html"
-            class="hover:bg-blue-700 text-white block px-3 py-2 rounded-md"
+            class="hover:bg-blue-400 text-white block px-3 py-2 rounded-md"
             >Services</a
           >
           <a
             href="/contact.html"
-            class="hover:bg-blue-700 text-white block px-3 py-2 rounded-md"
+            class="hover:bg-blue-400 text-white block px-3 py-2 rounded-md"
             >Contact</a
           >
         </div>
@@ -208,7 +205,7 @@
     <div class="flex flex-col items-center gap-y-4">
       <a
         href="https://wa.me/+27670074565"
-        class="bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-colors inline-flex items-center gap-x-2"
+        class="bg-green-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-colors inline-flex items-center gap-x-2"
         target="_blank"
         rel="noopener"
       >
@@ -218,7 +215,7 @@
 
       <a
         href="tel:+27670074565"
-        class="bg-white text-blue-800 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors inline-flex items-center gap-x-2"
+        class="bg-red-700 text-white px-8 py-3 rounded-full hover:bg-blue-400 transition-colors inline-flex items-center gap-x-2"
       >
         <i class="fas fa-phone-alt"></i>
         Or call us at +27 670 074 565
@@ -265,24 +262,11 @@
           </div>
         </div>
 
-        <!-- Phone -->
-        <div>
-          <label for="phone" class="block text-sm font-medium text-gray-700 mb-1"
-            >Phone Number</label
-          >
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
-
         <!-- Location / Area / Suburb -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <label for="location" class="block text-sm font-medium text-gray-700 mb-1"
-              >Location *</label
+              >Phone Number *</label
             >
             <input
               type="text"
@@ -292,28 +276,19 @@
               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-          <div>
-            <label for="area" class="block text-sm font-medium text-gray-700 mb-1"
-              >Area</label
-            >
-            <input
-              type="text"
-              id="area"
-              name="area"
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-          <div>
-            <label for="suburb" class="block text-sm font-medium text-gray-700 mb-1"
-              >Suburb</label
-            >
-            <input
-              type="text"
-              id="suburb"
-              name="suburb"
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
+        </div>
+
+        <!-- Address -->
+        <div>
+          <label for="phone" class="block text-sm font-medium text-gray-700 mb-1"
+            >Address *</label
+          >
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
         </div>
 
         <!-- Appliance / Brand -->
@@ -342,27 +317,6 @@
               <option>Other</option>
             </select>
           </div>
-          <div>
-            <label for="brand" class="block text-sm font-medium text-gray-700 mb-1"
-              >Select your brand *</label
-            >
-            <select
-              id="brand"
-              name="brand"
-              required
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <option value="" disabled selected>Please Select</option>
-              <option>Samsung</option>
-              <option>LG</option>
-              <option>Whirlpool</option>
-              <option>Bosch</option>
-              <option>Miele</option>
-              <option>Electrolux</option>
-              <option>Hisense</option>
-              <option>Other</option>
-            </select>
-          </div>
         </div>
 
         <!-- Message -->
@@ -380,48 +334,11 @@
           ></textarea>
         </div>
 
-        <!-- Referral -->
-        <div>
-          <label for="referral" class="block text-sm font-medium text-gray-700 mb-1"
-            >How did you hear about us? *</label
-          >
-          <select
-            id="referral"
-            name="referral"
-            required
-            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="" disabled selected>Please Select</option>
-            <option>Google</option>
-            <option>Facebook</option>
-            <option>Instagram</option>
-            <option>Friend/Referral</option>
-            <option>Flyer/Advertisement</option>
-            <option>Other</option>
-          </select>
-        </div>
-
-        <!-- Terms -->
-        <div class="flex items-start">
-          <input
-            id="terms"
-            name="terms"
-            type="checkbox"
-            required
-            class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
-          />
-          <label for="terms" class="ml-2 text-sm text-gray-700"
-            >I agree to the
-            <a href="#" class="text-blue-600 hover:underline">Terms & Conditions</a>
-            *</label
-          >
-        </div>
-
         <!-- Submit Button -->
         <div>
           <button
             type="submit"
-            class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-md transition duration-300 flex items-center justify-center"
+            class="w-full bg-blue-600 hover:bg-blue-300 text-white font-bold py-3 px-4 rounded-md transition duration-300 flex items-center justify-center"
           >
             <i class="fas fa-paper-plane mr-2"></i> Request Quotation
           </button>
@@ -441,10 +358,7 @@
     </div>
   </div>
 </section>
-
-    <!-- Add this in your HTML head to load Font Awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    
     <!-- Services Grid -->
     <section class="container mx-auto py-16 px-4">
       <div class="container mx-auto px-4 py-16">
@@ -454,12 +368,12 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Electrical Stove & Oven Repair -->
           <div
-            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            class="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <img
               src="images\IMG-20250310-WA0016.jpg"
               alt="Electrical Stove and Oven Repair Services"
-              class="w-full h-48 object-cover mb-4 rounded-lg"
+              class="w-full h-48 object-cover mb-4"
             />
             <h3 class="text-xl font-bold mb-2">
               Electrical Stove & Oven Repair
@@ -493,12 +407,12 @@
 
           <!-- Gas Stove & Oven Repair -->
           <div
-            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            class="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <img
               src="images/IMG-20250310-WA0014.jpg"
               alt="Gas Stove and Oven Repair Services"
-              class="w-full h-48 object-cover mb-4 rounded-lg"
+              class="w-full h-48 object-cover mb-4"
             />
             <h3 class="text-xl font-bold mb-2">Gas Stove & Oven Repair</h3>
             <p class="text-gray-600 mb-4">
@@ -531,12 +445,12 @@
 
           <!-- Washing Machine Repair -->
           <div
-            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            class="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <img
               src="images\IMG-20250310-WA0017.jpg"
               alt="Washing Machine Repair"
-              class="w-full h-48 object-cover mb-4 rounded-lg"
+              class="w-full h-48 object-cover mb-4"
             />
             <h3 class="text-xl font-bold mb-2">Washing Machine Repair</h3>
             <p class="text-gray-600 mb-4">
@@ -566,12 +480,12 @@
 
           <!-- Tumble Dryer Services -->
           <div
-            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            class="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <img
               src="images/IMG-20250310-WA0013.jpg"
               alt="Tumble Dryer Repair"
-              class="w-full h-48 object-cover mb-4 rounded-lg"
+              class="w-full h-48 object-cover mb-4"
             />
             <h3 class="text-xl font-bold mb-2">Tumble Dryer Services</h3>
             <p class="text-gray-600 mb-4">
@@ -602,12 +516,12 @@
 
           <!-- Dishwasher Repair -->
           <div
-            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            class="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <img
               src="images/IMG-20250310-WA0007.jpg"
               alt="Dishwasher Repair Service"
-              class="w-full h-48 object-cover mb-4 rounded-lg"
+              class="w-full h-48 object-cover mb-4"
             />
             <h3 class="text-xl font-bold mb-2">Dishwasher Repair</h3>
             <p class="text-gray-600 mb-4">
@@ -638,12 +552,12 @@
 
           <!-- Refrigerator Repair -->
           <div
-            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            class="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <img
               src="images\IMG-20250310-WA0005.jpg"
               alt="Refrigerator Repair Service"
-              class="w-full h-48 object-cover mb-4 rounded-lg"
+              class="w-full h-48 object-cover mb-4"
             />
             <h3 class="text-xl font-bold mb-2">Refrigerator Repair</h3>
             <p class="text-gray-600 mb-4">
@@ -674,12 +588,12 @@
 
           <!-- Microwave Repair -->
           <div
-            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            class="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <img
               src="images\Microwave repair.jpeg"
               alt="Microwave Repair Service"
-              class="w-full h-48 object-cover mb-4 rounded-lg"
+              class="w-full h-48 object-cover mb-4"
             />
             <h3 class="text-xl font-bold mb-2">Microwave Repair</h3>
             <p class="text-gray-600 mb-4">
@@ -727,7 +641,7 @@
             >
               <!-- Heroicon: Academic Cap -->
               <svg
-                class="w-8 h-8 text-blue-600"
+                class="w-8 h-8 text-blue-500"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -755,7 +669,7 @@
             >
               <!-- Heroicon: Tools -->
               <svg
-                class="w-8 h-8 text-blue-600"
+                class="w-8 h-8 text-blue-500"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -782,7 +696,7 @@
             >
               <!-- Heroicon: Clock -->
               <svg
-                class="w-8 h-8 text-blue-600"
+                class="w-8 h-8 text-blue-500"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -809,7 +723,7 @@
             >
               <!-- Heroicon: Shield Check -->
               <svg
-                class="w-8 h-8 text-blue-600"
+                class="w-8 h-8 text-blue-500"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -836,7 +750,7 @@
             >
               <!-- Heroicon: Currency Dollar -->
               <svg
-                class="w-8 h-8 text-blue-600"
+                class="w-8 h-8 text-blue-500"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -863,7 +777,7 @@
             >
               <!-- Heroicon: Heart -->
               <svg
-                class="w-8 h-8 text-blue-600"
+                class="w-8 h-8 text-blue-500"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -993,20 +907,20 @@
         <div class="container mx-auto px-6 md:px-12 lg:px-20">
           <div class="grid grid-cols-1 md:grid-cols-4 text-center gap-8">
             <div>
-              <h3 class="text-5xl font-extrabold text-yellow-500">12+</h3>
-              <p class="text-gray-600 mt-2">Years of Experience</p>
+              <h3 class="text-5xl font-extrabold text-blue-500">12+</h3>
+              <p class="text-black mt-2">Years of Experience</p>
             </div>
             <div>
-              <h3 class="text-5xl font-extrabold text-pink-500">4,850+</h3>
-              <p class="text-gray-600 mt-2">Repairs Completed</p>
+              <h3 class="text-5xl font-extrabold text-blue-500">4,850+</h3>
+              <p class="text-black mt-2">Repairs Completed</p>
             </div>
             <div>
-              <h3 class="text-5xl font-extrabold text-indigo-500">4000+</h3>
-              <p class="text-gray-600 mt-2">Happy Clients</p>
+              <h3 class="text-5xl font-extrabold text-blue-500">4000+</h3>
+              <p class="text-black mt-2">Happy Clients</p>
             </div>
             <div>
               <h3 class="text-5xl font-extrabold text-green-500">24/7</h3>
-              <p class="text-gray-600 mt-2">Support Available</p>
+              <p class="text-black mt-2">Support Available</p>
             </div>
           </div>
         </div>
@@ -1024,177 +938,11 @@
         </a>
       </div>
 
-    <footer
-      class="bg-gradient-to-b from-gray-900 to-gray-800 text-white pt-16 pb-8"
-    >
-      <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-4 gap-8 mb-12">
-          <!-- Company Info -->
-          <div class="space-y-4">
-            <h4 class="text-2xl font-bold mb-4">
-              <span class="text-blue-400">Prime</span>Fix
-            </h4>
-            <p class="text-gray-300 text-sm leading-relaxed">
-              Trusted appliance repair experts serving Cape Town since 2012.
-              24/7 emergency service available.
-            </p>
-            <div class="flex space-x-4 mt-4">
-              <a
-                href="#"
-                class="text-blue-400 hover:text-blue-300 transition-colors"
-              >
-                <i class="fab fa-facebook-square text-2xl"></i>
-              </a>
-              <a
-                href="#"
-                class="text-blue-400 hover:text-blue-300 transition-colors"
-              >
-                <i class="fab fa-instagram text-2xl"></i>
-              </a>
-              <a
-                href="#"
-                class="text-blue-400 hover:text-blue-300 transition-colors"
-              >
-                <i class="fab fa-linkedin text-2xl"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Services -->
-          <div>
-            <h4 class="text-xl font-bold mb-6 border-l-4 border-blue-400 pl-3">
-              Services
-            </h4>
-            <ul class="space-y-3">
-              <li>
-                <a
-                  href="electric-stove-repair.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Electrical Stove & Oven Repair
-                </a>
-              </li>
-              <li>
-                <a
-                  href="gas-stove-repair.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Gas Stove & Oven Repair
-                </a>
-              </li>
-              <li>
-                <a
-                  href="washing-machine-repair.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Washing Machine Repair
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tumble-dryer.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Tumble-dryer Repair
-                </a>
-              </li>
-              <li>
-                <a
-                  href="dishwasher-repair.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Dishwasher Repair
-                </a>
-              </li>
-              <li>
-                <a
-                  href="refrigerator-repair.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Refrigerator Repair
-                </a>
-              </li>
-              <li>
-                <a
-                  href="microwave-repair.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Microwave Repair
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Contact -->
-          <div>
-            <h4 class="text-xl font-bold mb-6 border-l-4 border-blue-400 pl-3">
-              Contact
-            </h4>
-            <ul class="space-y-4 text-gray-300">
-              <li class="flex items-start">
-                <i class="fas fa-phone-volume text-blue-400 mr-3 mt-1"></i>
-                <div>
-                  <p class="font-medium">Emergency Line</p>
-                  <a
-                    href="tel:+27670074565"
-                    class="hover:text-blue-400 transition-colors"
-                  >
-                    +27 67 007 4565
-                  </a>
-                </div>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-envelope text-blue-400 mr-3 mt-1"></i>
-                <div>
-                  <p class="font-medium">Email</p>
-                  <a
-                    href="mailto:info@primefix.co.za"
-                    class="hover:text-blue-400 transition-colors"
-                  >
-                    PrimeFix
-                  </a>
-                </div>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-map-marker-alt text-blue-400 mr-3 mt-1"></i>
-                <div>
-                  <p class="font-medium">Location</p>
-                  <p>Goodwood<br />Cape Town, 8000</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="border-t border-gray-700 pt-8 text-center">
-          <p class="text-gray-400 text-sm">
-            © 2025 PrimeFix. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
+    <footer class="bg-gradient-to-b from-blue-500 to-blue-700 text-white pt-10 pb-8">
+  <p class="text-gray-100 text-sm text-center">
+    © 2025 PrimeFix. All rights reserved.
+  </p>
+</footer>
 
     <script src="index.js"></script>
   </body>

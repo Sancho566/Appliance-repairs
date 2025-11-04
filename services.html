@@ -30,7 +30,7 @@
         "image": "https://www.primefix.co.za/images/primefixlogo.png",
         "@id": "https://www.primefix.co.za/#business",
         "url": "https://www.primefix.co.za/",
-        "telephone": "+276770074565",
+        "telephone": "+27670074565",
         "email": "info@primefix.co.za",
         "address": {
           "@type": "PostalAddress",
@@ -79,81 +79,43 @@
   <body class="bg-neutral-50">
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 bg-white shadow-sm">
-      <nav
-        class="container mx-auto px-4 sm:px-6 lg:px-8 relative"
-        aria-label="Main navigation"
-      >
-        <div class="flex items-center justify-between h-16">
-          <a href="index.html" class="flex items-center gap-2">
-            <span class="text-xl font-bold text-blue-600"
-              >Prime<span class="text-blue-400">Fix</span></span
-            >
-          </a>
+      <nav class="bg-blue-400 text-white shadow-lg">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <a href="index.html" class="text-2xl font-bold">
+          <span class="text-blue-900">Prime</span>Fix
+        </a>
 
-          <!-- Desktop Menu -->
-          <div class="hidden lg:flex items-center space-x-8">
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex space-x-8 items-center">
             <a
               href="index.html"
-              class="text-gray-600 hover:text-blue-600 transition-colors"
+              class=" text-white px-3 py-2 rounded-md font-medium transition-colors"
               >Home</a
             >
             <a
-              href="about.html"
-              class="text-gray-600 hover:text-blue-600 transition-colors"
+              href="/about.html"
+              class=" text-white px-3 py-2 s font-medium transition-colors"
+              aria-current="page"
               >About</a
             >
-            <div class="relative group">
-              <a
-                href="services.html"
-                class="text-blue-600 font-semibold flex items-center gap-1"
-              >
-                Services <i class="fas fa-chevron-down text-xs mt-1"></i>
-              </a>
-              <div
-                class="absolute hidden bg-white shadow-lg rounded-lg p-4 min-w-[240px] mt-2"
-              >
-                <a
-                  href="microwave-repair.html"
-                  class="block px-4 py-2 hover:bg-blue-600 rounded"
-                  >Microwave Repairs</a
-                >
-                <a
-                  href="refrigerator-repair.html"
-                  class="block px-4 py-2 hover:bg-blue-600 rounded"
-                  >Refrigerator Repairs</a
-                >
-                <a
-                  href="washing-machine-repair.html"
-                  class="block px-4 py-2 hover:bg-blue-600 rounded"
-                  >Washing Machine Repairs</a
-                >
-                <a
-                  href="dishwasher-repair.html"
-                  class="block px-4 py-2 hover:bg-blue-600 rounded"
-                  >Dishwasher Repairs</a
-                >
-                <a
-                  href="tumble-dryer.html"
-                  class="block px-4 py-2 hover:bg-blue-600 rounded"
-                  >Tumble Dryer Repairs</a
-                >
-                <a
-                  href="oven-stove-repair.html"
-                  class="block px-4 py-2 hover:bg-blue-600 rounded"
-                  >Oven & Stove Repairs</a
-                >
-              </div>
-            </div>
             <a
-              href="contact.html"
-              class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
-              >Schedule Service</a
+              href="/services.html"
+              class=" text-white px-3 py-2  font-medium transition-colors"
+              >Services</a
+            >
+            <a
+              href="/contact.html"
+              class=" text-white px-3 py-2  font-medium transition-colors"
+              >Contact</a
             >
           </div>
 
           <!-- Mobile Menu Button -->
           <button
-            class="md:hidden p-2 rounded-md hover:bg-blue-800 focus:outline-none"
+            class="md:hidden p-2 rounded-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-white"
+            aria-label="Open menu"
             onclick="toggleMobileMenu()"
           >
             <svg
@@ -170,82 +132,43 @@
               />
             </svg>
           </button>
-
-          <!-- Mobile Menu -->
-          <div
-            id="mobile-menu"
-            class="hidden lg:hidden absolute top-full left-0 w-full bg-blue-800 text-white shadow-lg z-50"
-          >
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
-              <a
-                href="index.html"
-                class="block px-4 py-2 hover:bg-blue-700 rounded"
-                >Home</a
-              >
-              <a
-                href="about.html"
-                class="block px-4 py-2 hover:bg-blue-700 rounded"
-                >About</a
-              >
-              <div class="relative">
-                <a
-                  href="services.html"
-                  class="block px-4 py-2 hover:bg-blue-700 rounded"
-                  >Services</a
-                >
-                <!-- Mobile Dropdown Items -->
-                <div class="pl-4">
-                  <a
-                    href="electric-stove-repair.html"
-                    class="block px-4 py-2 text-sm hover:bg-blue-700 rounded"
-                    >Electrical Stove & Oven Repairs</a
-                  >
-                  <a
-                    href="gas-stove-repair.html"
-                    class="block px-4 py-2 text-sm hover:bg-blue-700 rounded"
-                    >Gas Stove & Oven Repairs</a
-                  >
-                  <a
-                    href="washing-machine-repair.html"
-                    class="block px-4 py-2 text-sm hover:bg-blue-700 rounded"
-                    >Washing Machine Repairs</a
-                  >
-                  <a
-                    href="tumble-dryer.html"
-                    class="block px-4 py-2 text-sm hover:bg-blue-700 rounded"
-                    >Tumble Dryer Repairs</a
-                  >
-                  <a
-                    href="dishwasher-repair.html"
-                    class="block px-4 py-2 text-sm hover:bg-blue-700 rounded"
-                    >Dishwasher Repairs</a
-                  >
-                  <a
-                  href="refrigerator-repair.html"
-                  class="block px-4 py-2 text-sm hover:bg-blue-700 rounded"
-                  >Refrigerator Repairs</a
-                >
-                  <a
-                    href="microwave-repair.html"
-                    class="block px-4 py-2 text-sm hover:bg-blue-700 rounded"
-                    >Microwave Repairs</a
-                  >
-                </div>
-              </div>
-              <a
-                href="contact.html"
-                class="block px-4 py-2 mt-2 bg-white text-blue-800 hover:bg-gray-100 rounded-full text-center"
-                >Schedule Service</a
-              >
-            </div>
-          </div>
         </div>
-      </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden origin-top bg-blue-800 text-white shadow-lg z-50"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a
+            href="/index.html"
+            class="hover:bg-blue-400 text-white block px-3 py-2 rounded-md"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            class="hover:bg-blue-400 text-white block px-3 py-2 rounded-md"
+            >About</a
+          >
+          <a
+            href="/services.html"
+            class="hover:bg-blue-400 text-white block px-3 py-2 rounded-md"
+            >Services</a
+          >
+          <a
+            href="/contact.html"
+            class="hover:bg-blue-400 text-white block px-3 py-2 rounded-md"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
     </header>
 
     <!-- Floating WhatsApp Button -->
     <a
-      href="https://wa.me/276770074565"
+      href="https://wa.me/27670074565"
       target="_blank"
       class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all"
       aria-label="Chat with us on WhatsApp"
@@ -623,207 +546,11 @@
       </section>
     </main>
 
-    <footer
-      class="bg-gradient-to-b from-gray-900 to-gray-800 text-white pt-16 pb-8"
-    >
-      <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-4 gap-8 mb-12">
-          <!-- Company Info -->
-          <div class="space-y-4">
-            <h4 class="text-2xl font-bold mb-4">
-              <span class="text-blue-400">Prime</span>Fix
-            </h4>
-            <p class="text-gray-300 text-sm leading-relaxed">
-              Trusted appliance repair experts serving Cape Town since 2012.
-              24/7 emergency service available.
-            </p>
-            <div class="flex space-x-4 mt-4">
-              <a
-                href="#"
-                class="text-blue-400 hover:text-blue-300 transition-colors"
-              >
-                <i class="fab fa-facebook-square text-2xl"></i>
-              </a>
-              <a
-                href="#"
-                class="text-blue-400 hover:text-blue-300 transition-colors"
-              >
-                <i class="fab fa-instagram text-2xl"></i>
-              </a>
-              <a
-                href="#"
-                class="text-blue-400 hover:text-blue-300 transition-colors"
-              >
-                <i class="fab fa-linkedin text-2xl"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Services -->
-          <div>
-            <h4 class="text-xl font-bold mb-6 border-l-4 border-blue-400 pl-3">
-              Services
-            </h4>
-            <ul class="space-y-3">
-              <li>
-                <a
-                  href="electric-stove-repair.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Electrical Stove & Oven Repair
-                </a>
-              </li>
-              <li>
-                <a
-                  href="gas-stove-repair.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Gas Stove & Oven Repair
-                </a>
-              </li>
-              <li>
-                <a
-                  href="washing-machine-repair.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Washing Machine Repair
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tumble-dryer.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Tumble-dryer Repair
-                </a>
-              </li>
-              <li>
-                <a
-                  href="dishwasher-repair.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Dishwasher Repair
-                </a>
-              </li>
-              <li>
-                <a
-                  href="refrigerator-repair.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Refrigerator Repair
-                </a>
-              </li>
-              <li>
-                <a
-                  href="microwave-repair.html"
-                  class="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
-                >
-                  <i
-                    class="fas fa-chevron-right text-xs mr-2 text-blue-400"
-                  ></i>
-                  Microwave Repair
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Contact -->
-          <div>
-            <h4 class="text-xl font-bold mb-6 border-l-4 border-blue-400 pl-3">
-              Contact
-            </h4>
-            <ul class="space-y-4 text-gray-300">
-              <li class="flex items-start">
-                <i class="fas fa-phone-volume text-blue-400 mr-3 mt-1"></i>
-                <div>
-                  <p class="font-medium">Emergency Line</p>
-                  <a
-                    href="tel:+276770074565"
-                    class="hover:text-blue-400 transition-colors"
-                  >
-                    +27 6770 074 565
-                  </a>
-                </div>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-envelope text-blue-400 mr-3 mt-1"></i>
-                <div>
-                  <p class="font-medium">Email</p>
-                  <a
-                    href="mailto:info@primefix.co.za"
-                    class="hover:text-blue-400 transition-colors"
-                  >
-                    primefix.co.za
-                  </a>
-                </div>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-map-marker-alt text-blue-400 mr-3 mt-1"></i>
-                <div>
-                  <p class="font-medium">Location</p>
-                  <p>Goodwood<br />Cape Town, 8000</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Newsletter -->
-          <div>
-            <h4 class="text-xl font-bold mb-6 border-l-4 border-blue-400 pl-3">
-              Stay Updated
-            </h4>
-            <p class="text-gray-300 mb-4">
-              Subscribe for maintenance tips and special offers:
-            </p>
-            <form class="flex gap-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="flex-1 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-800"
-              />
-              <button
-                type="submit"
-                class="bg-blue-400 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition-colors"
-              >
-                <i class="fas fa-paper-plane"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="border-t border-gray-700 pt-8 text-center">
-          <p class="text-gray-400 text-sm">
-            © 2025 PrimeFix. All rights reserved.
-            <a href="#" class="hover:text-blue-400 transition-colors"
-              >Privacy Policy</a
-            >
-            |
-            <a href="#" class="hover:text-blue-400 transition-colors"
-              >Terms of Service</a
-            >
-          </p>
-        </div>
-      </div>
-    </footer>
+     <footer class="bg-gradient-to-b from-blue-500 to-blue-700 text-white pt-10 pb-8">
+  <p class="text-gray-100 text-sm text-center">
+    © 2025 PrimeFix. All rights reserved.
+  </p>
+</footer>
 
     <script src="index.js"></script>
   </body>
