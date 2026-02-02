@@ -44,7 +44,10 @@
     <link rel="canonical" href="https://www.primefix.co.za/" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -107,30 +110,30 @@
         <div class="flex justify-between items-center h-16">
           <!-- Logo -->
           <a href="index.html" class="text-2xl font-bold">
-          <span class="text-blue-900">Prime</span>Fix
-        </a>
+            <span class="text-blue-900">Prime</span>Fix
+          </a>
 
           <!-- Desktop Navigation -->
           <div class="hidden md:flex space-x-8 items-center">
             <a
               href="index.html"
-              class=" text-white px-3 py-2 rounded-md font-medium transition-colors"
+              class="text-white px-3 py-2 rounded-md font-medium transition-colors"
               >Home</a
             >
             <a
               href="/about.html"
-              class=" text-white px-3 py-2 s font-medium transition-colors"
+              class="text-white px-3 py-2 s font-medium transition-colors"
               aria-current="page"
               >About</a
             >
             <a
               href="/services.html"
-              class=" text-white px-3 py-2  font-medium transition-colors"
+              class="text-white px-3 py-2 font-medium transition-colors"
               >Services</a
             >
             <a
               href="/contact.html"
-              class=" text-white px-3 py-2  font-medium transition-colors"
+              class="text-white px-3 py-2 font-medium transition-colors"
               >Contact</a
             >
           </div>
@@ -159,206 +162,246 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden origin-top bg-blue-800 text-white shadow-lg z-50"
-      >
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="/"
-            class="hover:bg-blue-400 text-white block px-3 py-2 rounded-md"
-            >Home</a
-          >
-          <a
-            href="/about.html"
-            class="hover:bg-blue-400 text-white block px-3 py-2 rounded-md"
-            >About</a
-          >
-          <a
-            href="/services.html"
-            class="hover:bg-blue-400 text-white block px-3 py-2 rounded-md"
-            >Services</a
-          >
-          <a
-            href="/contact.html"
-            class="hover:bg-blue-400 text-white block px-3 py-2 rounded-md"
-            >Contact</a
-          >
-        </div>
-      </div>
+      <!-- Mobile Menu -->
+<div
+  id="mobile-menu"
+  class="hidden md:hidden origin-top bg-blue-800 text-white shadow-lg z-50"
+>
+  <div class="px-2 pt-2 pb-3 space-y-1">
+    <a href="/" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
+      Home
+    </a>
+
+    <a href="/about.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
+      About
+    </a>
+
+    <a href="/contact.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
+      Contact
+    </a>
+
+    <!-- Mobile Only Services List -->
+    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
+      Electrical Stove & Oven Repair
+    </a>
+
+    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
+      Gas Stove & Oven Repair
+    </a>
+
+    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
+      Washing Machine Repair
+    </a>
+
+    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
+      Refrigerator Repair
+    </a>
+
+    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
+      Dishwasher Repair
+    </a>
+
+    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
+      Tumble Dryer
+    </a>
+
+    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
+      Microwave Repair
+    </a>
+  </div>
+</div>
+
     </nav>
 
-   <!-- Header Section -->
-<header class="relative h-screen flex items-center justify-center text-white">
-  <div
-    class="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-50"
-    style="background-image: url('/images/IMG-20250310-WA0006.jpg');"
-  ></div>
-
-  <div class="relative z-10 text-center px-4">
-    <h1 class="text-5xl md:text-5xl font-bold mb-4">
-      Expert Appliance Repair Services
-    </h1>
-    <p class="text-xl mb-8">
-      24/7 Emergency Service | Certified Technicians | 6-months Warranty
-    </p>
-    <div class="flex flex-col items-center gap-y-4">
-      <a
-        href="https://wa.me/+27670074565"
-        class="bg-green-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-colors inline-flex items-center gap-x-2"
-        target="_blank"
-        rel="noopener"
-      >
-        <i class="fab fa-whatsapp text-xl"></i>
-        Book an Appointment via WhatsApp
-      </a>
-
-      <a
-        href="tel:+27670074565"
-        class="bg-red-700 text-white px-8 py-3 rounded-full hover:bg-blue-400 transition-colors inline-flex items-center gap-x-2"
-      >
-        <i class="fas fa-phone-alt"></i>
-        Or call us at +27 670 074 565
-      </a>
-    </div>
-  </div>
-</header>
-
-<!-- Contact / Quotation Form Section -->
-<section id="quotation" class="py-16 bg-gray-100">
-  <div class="max-w-5xl mx-auto px-6">
-    <!-- Contact Form Section -->
-    <div class="bg-white rounded-b-xl shadow-lg p-6">
-      <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">
-        REQUEST A QUOTATION
-      </h2>
-
-      <form id="quotationForm" class="space-y-6" action="quotation.php" method="POST">
-        <!-- Name and Email Row -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label for="name" class="block text-sm font-medium text-gray-700 mb-1"
-              >Name *</label
-            >
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-          <div>
-            <label for="email" class="block text-sm font-medium text-gray-700 mb-1"
-              >Email *</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-        </div>
-
-        <!-- Location / Area / Suburb -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div>
-            <label for="location" class="block text-sm font-medium text-gray-700 mb-1"
-              >Phone Number *</label
-            >
-            <input
-              type="text"
-              id="location"
-              name="location"
-              required
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-        </div>
-
-        <!-- Address -->
-        <div>
-          <label for="phone" class="block text-sm font-medium text-gray-700 mb-1"
-            >Address *</label
-          >
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
-
-        <!-- Appliance / Brand -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label
-              for="applianceType"
-              class="block text-sm font-medium text-gray-700 mb-1"
-              >Type of Appliance *</label
-            >
-            <select
-              id="applianceType"
-              name="applianceType"
-              required
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <option value="" disabled selected>Please Select</option>
-              <option>Refrigerator</option>
-              <option>Freezer</option>
-              <option>Oven</option>
-              <option>Electric/Gas Stove</option>
-              <option>Dishwasher</option>
-              <option>Washing Machine</option>
-              <option>Microwave</option>
-              <option>Dryer</option>
-              <option>Other</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Message -->
-        <div>
-          <label for="message" class="block text-sm font-medium text-gray-700 mb-1"
-            >Message *</label
-          >
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            required
-            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Please describe the issue with your appliance..."
-          ></textarea>
-        </div>
-
-        <!-- Submit Button -->
-        <div>
-          <button
-            type="submit"
-            class="w-full bg-blue-600 hover:bg-blue-300 text-white font-bold py-3 px-4 rounded-md transition duration-300 flex items-center justify-center"
-          >
-            <i class="fas fa-paper-plane mr-2"></i> Request Quotation
-          </button>
-        </div>
-      </form>
-
-      <!-- Success Message -->
+    <!-- Header Section -->
+    <header
+      class="relative h-screen flex items-center justify-center text-white"
+    >
       <div
-        id="successMessage"
-        class="hidden mt-6 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded"
-      >
-        <strong class="font-bold">Success!</strong>
-        <span class="block sm:inline">
-          Your quotation request has been submitted. We'll contact you within 24 hours.
-        </span>
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-50"
+        style="background-image: url('/images/IMG-20250310-WA0006.jpg')"
+      ></div>
+
+      <div class="relative z-10 text-center px-4">
+        <h1 class="text-5xl md:text-5xl font-bold mb-4">
+          Expert Appliance Repair Services
+        </h1>
+        <p class="text-xl mb-8">
+          24/7 Emergency Service | Certified Technicians | 6-months Warranty
+        </p>
+        <div class="flex flex-col items-center gap-y-4">
+          <a
+            href="https://wa.me/+27670074565"
+            class="bg-green-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-colors inline-flex items-center gap-x-2"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-whatsapp text-xl"></i>
+            Book an Appointment via WhatsApp
+          </a>
+
+          <a
+            href="tel:+27670074565"
+            class="bg-red-700 text-white px-8 py-3 rounded-full hover:bg-blue-400 transition-colors inline-flex items-center gap-x-2"
+          >
+            <i class="fas fa-phone-alt"></i>
+            Or call us at +27 670 074 565
+          </a>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-    
+    </header>
+
+    <!-- Contact / Quotation Form Section -->
+    <section id="quotation" class="py-16 bg-gray-100">
+      <div class="max-w-5xl mx-auto px-6">
+        <!-- Contact Form Section -->
+        <div class="bg-white rounded-b-xl shadow-lg p-6">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">
+            REQUEST A QUOTATION
+          </h2>
+
+          <form
+            id="quotationForm"
+            class="space-y-6"
+            action="quotation.php"
+            method="POST"
+          >
+            <!-- Name and Email Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Name *</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Email *</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+
+            <!-- Location / Area / Suburb -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div>
+                <label
+                  for="location"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Phone Number *</label
+                >
+                <input
+                  type="text"
+                  id="location"
+                  name="location"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div>
+              <label
+                for="phone"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Address *</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <!-- Appliance / Brand -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label
+                  for="applianceType"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Type of Appliance *</label
+                >
+                <select
+                  id="applianceType"
+                  name="applianceType"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value="" disabled selected>Please Select</option>
+                  <option>Refrigerator</option>
+                  <option>Freezer</option>
+                  <option>Oven</option>
+                  <option>Electric/Gas Stove</option>
+                  <option>Dishwasher</option>
+                  <option>Washing Machine</option>
+                  <option>Microwave</option>
+                  <option>Dryer</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Message *</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Please describe the issue with your appliance..."
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+              <button
+                type="submit"
+                class="w-full bg-blue-600 hover:bg-blue-300 text-white font-bold py-3 px-4 rounded-md transition duration-300 flex items-center justify-center"
+              >
+                <i class="fas fa-paper-plane mr-2"></i> Request Quotation
+              </button>
+            </div>
+          </form>
+
+          <!-- Success Message -->
+          <div
+            id="successMessage"
+            class="hidden mt-6 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded"
+          >
+            <strong class="font-bold">Success!</strong>
+            <span class="block sm:inline">
+              Your quotation request has been submitted. We'll contact you
+              within 24 hours.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Services Grid -->
     <section class="container mx-auto py-16 px-4">
       <div class="container mx-auto px-4 py-16">
@@ -519,7 +562,7 @@
             class="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <img
-              src="images/IMG-20250310-WA0007.jpg"
+              src="images/dishwasher.jpeg"
               alt="Dishwasher Repair Service"
               class="w-full h-48 object-cover mb-4"
             />
@@ -927,22 +970,23 @@
       </div>
     </section>
 
-        <!-- WhatsApp Button -->
-        <a
-          href="https://wa.me/27670074565"
-          target="_blank"
-          class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all"
-          aria-label="Chat with us on WhatsApp"
-        >
-          <i class="fab fa-whatsapp text-2xl"></i>
-        </a>
-     
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/27670074565"
+      target="_blank"
+      class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
 
-    <footer class="bg-gradient-to-b from-blue-500 to-blue-700 text-white pt-10 pb-8">
-  <p class="text-gray-100 text-sm text-center">
-    © 2025 PrimeFix. All rights reserved.
-  </p>
-</footer>
+    <footer
+      class="bg-gradient-to-b from-blue-500 to-blue-700 text-white pt-10 pb-8"
+    >
+      <p class="text-gray-100 text-sm text-center">
+        © 2026 PrimeFix. All rights reserved.
+      </p>
+    </footer>
 
     <script src="index.js"></script>
   </body>
