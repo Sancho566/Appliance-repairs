@@ -76,47 +76,43 @@
   id="mobile-menu"
   class="hidden md:hidden origin-top bg-blue-800 text-white shadow-lg z-50"
 >
-  <div class="px-2 pt-2 pb-3 space-y-1">
-    <a href="/" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
+  <div class="px-2 pt-2 pb-3 space-y-2">
+
+    <!-- Emergency Line -->
+    <a
+      href="tel:0211001190"
+      class="hover:bg-blue-400 block px-3 py-2 rounded-md"
+    >
+      📞 Emergency Line: 021 100 1190
+    </a>
+
+    <!-- Email -->
+    <a
+      href="mailto:tapfumamundondo@gmail.com"
+      class="hover:bg-blue-400 block px-3 py-2 rounded-md"
+    >
+      ✉️ Email: info@primefix.co.za
+    </a>
+
+    <!-- WhatsApp -->
+    <a
+      href="https://wa.me/27670074565"
+      class="hover:bg-blue-400 block px-3 py-2 rounded-md"
+    >
+      💬 WhatsApp: 067 007 4565
+    </a>
+
+    <!-- Divider -->
+    <hr class="border-blue-500 my-2">
+
+    <!-- Home -->
+    <a
+      href="/"
+      class="hover:bg-blue-400 block px-3 py-2 rounded-md"
+    >
       Home
     </a>
 
-    <a href="/about.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
-      About
-    </a>
-
-    <a href="/contact.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
-      Contact
-    </a>
-
-    <!-- Mobile Only Services List -->
-    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
-      Electrical Stove & Oven Repair
-    </a>
-
-    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
-      Gas Stove & Oven Repair
-    </a>
-
-    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
-      Washing Machine Repair
-    </a>
-
-    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
-      Refrigerator Repair
-    </a>
-
-    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
-      Dishwasher Repair
-    </a>
-
-    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
-      Tumble Dryer
-    </a>
-
-    <a href="/services.html" class="hover:bg-blue-400 block px-3 py-2 rounded-md">
-      Microwave Repair
-    </a>
   </div>
 </div>
     </nav>
@@ -211,9 +207,9 @@
                       >Phone Number *</label
                     >
                     <input
-                      type="text"
-                      id="location"
-                      name="location"
+                      type="tel"
+                      id="phone"
+                      name="phone"
                       required
                       class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
@@ -223,14 +219,14 @@
                 <!-- Address -->
                 <div>
                   <label
-                    for="phone"
+                    for="address"
                     class="block text-sm font-medium text-gray-700 mb-1"
                     >Address *</label
                   >
                   <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
+                    type="text"
+                    id="address"
+                    name="address"
                     class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
@@ -304,7 +300,7 @@
                   </div>
                   <div>
                     <p class="font-medium text-black">Headquarters</p>
-                    <p class="text-black">10 Warner Crescent, Goodwood<br />Capetown</p>
+                    <p class="text-black">10 Warner Crescent Riverton,<br />Goodwood, Capetown</p>
                   </div>
                 </li>
                 <li class="flex items-start space-x-4">
@@ -314,10 +310,10 @@
                   <div>
                     <p class="font-medium text-black">Emergency Line</p>
                     <a
-                      href="tel:+276770074565"
+                      href="tel:0211001190"
                       class="text-black hover:text-white transition-colors"
                     >
-                      +27 67 007 4565
+                      021 100 1190
                     </a>
                   </div>
                 </li>
