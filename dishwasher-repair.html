@@ -179,28 +179,48 @@
     </nav>
 
     <!-- Hero Section -->
-    <section
-      class="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-16"
-    >
-      <div class="container mx-auto px-4 text-center">
-        <div class="max-w-4xl mx-auto">
-          <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-water-ripple">
-            Emergency Dishwasher Repairs in Cape Town
-          </h1>
-          <p class="text-xl md:text-2xl mb-8 animate-water-ripple">
-            24/7 Expert Service to Prevent Water Damage & Protect Your Home
-          </p>
-          <div class="animate-water-ripple">
-            <a
-              href="tel:0211001190"
-              class="inline-block bg-white text-blue-800 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all transform hover:scale-105"
-            >
-              <i class="fas fa-life-ring mr-2"></i>Emergency Call: 021 100 1190
-            </a>
-          </div>
-        </div>
+<section class="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-16">
+  <div class="container mx-auto px-4 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-water-ripple">
+        Emergency Dishwasher Repairs in Cape Town
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 animate-water-ripple">
+        24/7 Expert Service to Prevent Water Damage & Protect Your Home
+      </p>
+
+      <!-- Buttons: stacked on mobile, inline on larger screens -->
+      <div class="animate-water-ripple flex flex-col sm:flex-row items-center justify-center gap-3">
+        <!-- Emergency Call (existing) -->
+        <a
+          href="tel:0211001190"
+          class="inline-block bg-white text-blue-800 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all transform hover:scale-105"
+        >
+          <i class="fas fa-life-ring mr-2" aria-hidden="true"></i>
+          Emergency Call: 021 100 1190
+        </a>
+
+        <!-- WhatsApp button (green) -->
+        <a
+          href="https://wa.me/27670074565?text=Hello%20I%20would%20like%20to%20book%20an%20appointment%20for%20a%20dishwasher%20repair."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-bold transition-all transform hover:scale-105"
+          aria-label="Book an appointment via WhatsApp (opens in a new tab)"
+        >
+          <!-- Inline WhatsApp SVG icon (fallback if Font Awesome isn't loaded) -->
+          <svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M20.52 3.48A11.72 11.72 0 0012 0C5.373 0 .002 5.373.002 12c0 2.116.553 4.183 1.603 6.01L0 24l6.224-1.61A11.92 11.92 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.2-3.48-8.52zM12 21.5c-1.13 0-2.24-.26-3.26-.76l-.23-.1-3.7.96.99-3.6-.15-.23A8.5 8.5 0 013.5 12.0 8.5 8.5 0 1112 21.5z"/>
+            <path fill="#fff" d="M17.06 14.08c-.28-.14-1.67-.82-1.93-.91-.26-.09-.45-.14-.64.14-.18.27-.71.91-.87 1.1-.16.18-.33.2-.61.07-.28-.14-1.17-.43-2.23-1.36-.82-.73-1.37-1.63-1.53-1.9-.16-.27-.02-.42.12-.56.12-.12.28-.33.42-.5.14-.17.18-.28.28-.46.09-.18.04-.34-.02-.48-.07-.14-.63-1.53-.86-2.12-.23-.56-.46-.49-.64-.5l-.55-.01c-.18 0-.48.07-.73.35-.25.28-.96.94-.96 2.3 0 1.36.99 2.68 1.13 2.86.14.18 1.96 3 4.75 4.2 1.33.57 1.88.6 2.56.5.66-.1 1.99-.81 2.27-1.59.28-.78.28-1.45.2-1.59-.07-.14-.26-.2-.54-.35z"/>
+          </svg>
+
+          <!-- If Font Awesome is available you could use: <i class="fab fa-whatsapp mr-3"></i> -->
+          <span>Book an appointment via WhatsApp</span>
+        </a>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- Contact / Quotation Form Section -->
     <section id="quotation" class="py-16 bg-gray-100">
@@ -567,7 +587,7 @@
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
               <a
-                href="tel:+27670074565"
+                href="tel:0211001190"
                 class="bg-white text-blue-800 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all transform hover:scale-105"
               >
                 <i class="fas fa-phone-volume mr-2"></i>Immediate Response
