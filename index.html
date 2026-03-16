@@ -212,42 +212,107 @@
     </nav>
 
     <!-- Header Section -->
-    <header
-      class="relative h-screen flex items-center justify-center text-white"
-    >
-      <div
-        class="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-50"
-        style="background-image: url('/images/IMG-20250310-WA0006.jpg')"
-      ></div>
+<header class="relative h-screen flex items-center justify-center text-white overflow-hidden">
 
-      <div class="relative z-10 text-center px-4">
-        <h1 class="text-5xl md:text-5xl font-bold mb-4">
-          Expert Appliance Repair Services
-        </h1>
-        <p class="text-xl mb-8">
-          24/7 Emergency Service | Certified Technicians | 6-months Warranty
-        </p>
-        <div class="flex flex-col items-center gap-y-4">
-          <a
-            href="https://wa.me/+27670074565"
-            class="bg-green-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-colors inline-flex items-center gap-x-2"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="fab fa-whatsapp text-xl"></i>
-            Book an Appointment via WhatsApp
-          </a>
+  <!-- Carousel wrapper -->
+  <div id="hero-carousel" class="absolute inset-0 z-0">
 
-          <a
-            href="tel:0211001190"
-            class="bg-red-700 text-white px-8 py-3 rounded-full hover:bg-blue-400 transition-colors inline-flex items-center gap-x-2"
-          >
-            <i class="fas fa-phone-alt"></i>
-            Or call us at 021 100 1190
-          </a>
-        </div>
-      </div>
-    </header>
+    <!-- Slide 1 -->
+    <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000">
+      <img src="/images/IMG-20250310-WA0006.jpg"
+           class="w-full h-full object-cover"
+           alt="Appliance repair">
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+      <img src="images/IMG-20250310-WA0008.jpg"
+           class="w-full h-full object-cover"
+           alt="Appliance repair">
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+      <img src="images/IMG-20250310-WA0017.jpg"
+           class="w-full h-full object-cover"
+           alt="Appliance repair">
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+      <img src="images/IMG-20250310-WA0012.jpg"
+           class="w-full h-full object-cover"
+           alt="Appliance repair">
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+      <img src="images/IMG-20250310-WA0009.jpg"
+           class="w-full h-full object-cover"
+           alt="Appliance repair">
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+  </div>
+
+  <!-- Foreground Content -->
+  <div class="relative z-20 text-center px-4 max-w-4xl">
+
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+      Expert Appliance Repair Services
+    </h1>
+
+    <p class="text-lg md:text-xl mb-8">
+      24/7 Emergency Service | Certified Technicians | 6-months Warranty
+    </p>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+      <a href="https://wa.me/+27670074565"
+         class="bg-green-500 text-white px-8 py-3 rounded-full hover:bg-green-600 transition flex items-center justify-center gap-2"
+         target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+        Book an Appointment via WhatsApp
+      </a>
+
+      <a href="tel:0211001190"
+         class="bg-red-700 text-white px-8 py-3 rounded-full hover:bg-red-800 transition flex items-center justify-center gap-2">
+
+        <i class="fas fa-phone-alt"></i>
+        Call us at 021 100 1190
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Previous Button -->
+  <button id="carousel-prev"
+    class="absolute left-5 top-1/2 transform -translate-y-1/2 z-30 bg-black/40 p-3 rounded-full hover:bg-black/60">
+
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M15 19l-7-7 7-7"/>
+    </svg>
+
+  </button>
+
+  <!-- Next Button -->
+  <button id="carousel-next"
+    class="absolute right-5 top-1/2 transform -translate-y-1/2 z-30 bg-black/40 p-3 rounded-full hover:bg-black/60">
+
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M9 5l7 7-7 7"/>
+    </svg>
+
+  </button>
+
+</header>
 
     <!-- Contact / Quotation Form Section -->
     <section id="quotation" class="py-16 bg-gray-100">
@@ -874,6 +939,11 @@
                 class="h-16 object-contain opacity-80 hover:opacity-100 transition hover:scale-105"
               />
               <img
+                src="images\defy-seeklogo.png"
+                alt="Defy"
+                class="h-16 object-contain opacity-80 hover:opacity-100 transition hover:scale-105"
+              />
+              <img
                 src="images\samsung-logo.svg"
                 alt="Samsung"
                 class="h-16 object-contain opacity-80 hover:opacity-100 transition hover:scale-105"
@@ -939,6 +1009,11 @@
                 alt="Gree"
                 class="h-16 object-contain opacity-80 hover:opacity-100 transition hover:scale-105"
               />
+              <img
+                src="images\defy-seeklogo.png"
+                alt="Defy"
+                class="h-16 object-contain opacity-80 hover:opacity-100 transition hover:scale-105"
+              />
             </div>
           </div>
         </div>
@@ -973,10 +1048,11 @@
 <a
   href="https://wa.me/27670074565"
   target="_blank"
-  class="fixed top-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all z-50"
   aria-label="Chat with us on WhatsApp"
+  class="fixed right-6 top-1/2 -translate-y-1/2 z-50 inline-flex items-center justify-center p-3 rounded-full bg-green-500 text-white shadow-lg"
+  style="bottom: auto !important; height: auto !important; min-height: 0 !important; max-height: none !important;"
 >
-  <i class="fab fa-whatsapp text-2xl"></i>
+  <i class="fab fa-whatsapp text-2xl" aria-hidden="true"></i>
 </a>
 
     <footer

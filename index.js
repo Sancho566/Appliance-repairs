@@ -117,3 +117,53 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+  const slides = document.querySelectorAll(".carousel-slide")
+let currentSlide = 0
+
+function showSlide(index){
+
+slides.forEach((slide,i)=>{
+
+if(i === index){
+slide.style.opacity = "1"
+}else{
+slide.style.opacity = "0"
+}
+
+})
+
+}
+
+document.getElementById("carousel-next").addEventListener("click",()=>{
+
+currentSlide++
+if(currentSlide >= slides.length){
+currentSlide = 0
+}
+
+showSlide(currentSlide)
+
+})
+
+document.getElementById("carousel-prev").addEventListener("click",()=>{
+
+currentSlide--
+if(currentSlide < 0){
+currentSlide = slides.length - 1
+}
+
+showSlide(currentSlide)
+
+})
+
+setInterval(()=>{
+
+currentSlide++
+if(currentSlide >= slides.length){
+currentSlide = 0
+}
+
+showSlide(currentSlide)
+
+},5000)
