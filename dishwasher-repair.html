@@ -179,43 +179,50 @@
     </nav>
 
 <!-- Hero (image as background) -->
-<section class="relative text-white h-[680px] md:h-screen overflow-hidden">
-  <!-- Background: gradient + image + overlay -->
-  <div class="absolute inset-0 bg-gradient-to-r from-blue-800 to-blue-900"></div>
+<!-- Dishwasher Hero Section (Full Image Background) -->
+<section
+  class="relative min-h-screen flex items-center text-white overflow-hidden"
+>
+  <!-- Background Image -->
+  <div
+    class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style="background-image: url('/images/dishwasher.jpeg');"
+  ></div>
 
-  <!-- Image (covers, lazy-loaded) -->
-  <picture class="absolute inset-0 -z-10">
-    <source srcset="/images/dishwasher-1600.webp" type="image/webp">
-    <img src="/images/dishwasher.jpeg" alt="Technician repairing a dishwasher" loading="lazy"
-         class="w-full h-full object-cover object-center opacity-60">
-  </picture>
+  <!-- Optional WebP support (advanced fallback) -->
+  <!-- You can swap image via CSS if needed -->
 
-  <!-- Dark overlay to keep text readable -->
-  <div class="absolute inset-0 bg-black/40"></div>
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
 
   <!-- Content -->
-  <div class="container mx-auto px-4 relative z-10 flex items-center h-full">
-    <div class="max-w-3xl text-center mx-auto">
+  <div class="container mx-auto px-4 relative z-10 flex items-center justify-center text-center">
+    <div class="max-w-3xl">
       <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-water-ripple">
         Emergency Dishwasher Repairs in Cape Town
       </h1>
+
       <p class="text-lg md:text-xl mb-8 animate-water-ripple">
         24/7 Expert Service to Prevent Water Damage & Protect Your Home
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-        <a href="tel:0211001190"
-           class="inline-block bg-white text-blue-800 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all transform hover:scale-105">
-          <i class="fas fa-life-ring mr-2" aria-hidden="true"></i>
+        <a
+          href="tel:0211001190"
+          class="inline-block bg-white text-blue-800 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all transform hover:scale-105"
+        >
+          <i class="fas fa-life-ring mr-2"></i>
           Emergency Call: 021 100 1190
         </a>
 
-        <a href="https://wa.me/27670074565?text=Hello%20I%20would%20like%20to%20book%20an%20appointment%20for%20a%20dishwasher%20repair."
-           target="_blank" rel="noopener noreferrer"
-           class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-bold transition-all transform hover:scale-105"
-           aria-label="Book an appointment via WhatsApp (opens in a new tab)">
+        <a
+          href="https://wa.me/27670074565?text=Hello%20I%20would%20like%20to%20book%20an%20appointment%20for%20a%20dishwasher%20repair."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-bold transition-all transform hover:scale-105"
+        >
           <!-- svg icon -->
-          <svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <svg class="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path fill="currentColor" d="M20.52 3.48A11.72 11.72 0 0012 0C5.373 0 .002 5.373.002 12c0 2.116.553 4.183 1.603 6.01L0 24l6.224-1.61A11.92 11.92 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.2-3.48-8.52z"/>
             <path fill="#fff" d="M17.06 14.08c-.28-.14-1.67-.82-1.93-.91..."/>
           </svg>
